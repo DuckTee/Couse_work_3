@@ -1,0 +1,26 @@
+[project]
+name = "course-work-3"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Ksenia_Sheveleva",email = "brantova00@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "requests (>=2.32.4,<3.0.0)",
+    "psycopg2 (>=2.9.10,<3.0.0)",
+    "python-dotenv (>=1.1.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.3.0"
+mypy = "^1.16.1"
+black = "^25.1.0"
+isort = "^6.0.1"
+
